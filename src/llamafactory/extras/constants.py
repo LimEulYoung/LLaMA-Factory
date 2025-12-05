@@ -2073,7 +2073,7 @@ register_model_group(
             DownloadSource.DEFAULT: "K-intelligence/Midm-2.0-Mini-Instruct",
         },
     },
-    template="llama3",
+    template="midm",
 )
 
 
