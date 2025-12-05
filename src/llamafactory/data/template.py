@@ -983,6 +983,15 @@ register_template(
     format_system=StringFormatter(slots=["[|system|]{{content}}[|endofturn|]\n"]),
 )
 
+register_template(
+    name="exaone4",
+    format_user=StringFormatter(slots=["[|user|]{{content}}\n[|assistant|]"]),
+    format_assistant=StringFormatter(slots=["{{content}}", {"eos_token"}, "\n"]),
+    format_system=StringFormatter(slots=["[|system|]{{content}}[|endofturn|]\n"]),
+    thought_words=("<think>", "</think>"),
+    template_class=ReasoningTemplate,
+)
+
 
 register_template(
     name="falcon",

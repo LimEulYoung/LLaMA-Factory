@@ -692,7 +692,7 @@ register_model_group(
             DownloadSource.DEFAULT: "LGAI-EXAONE/EXAONE-4.0-1.2B",
         },
     },
-    template="exaone",
+    template="exaone4",
 )
 
 
