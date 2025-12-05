@@ -2067,6 +2067,15 @@ register_model_group(
     template="llama3",
 )
 
+register_model_group(
+    models={
+        "Midm-2.0-Mini-Instruct": {
+            DownloadSource.DEFAULT: "K-intelligence/Midm-2.0-Mini-Instruct",
+        },
+    },
+    template="llama3",
+)
+
 
 register_model_group(
     models={
