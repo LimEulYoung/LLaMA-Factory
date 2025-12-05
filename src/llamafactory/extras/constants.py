@@ -688,7 +688,7 @@ register_model_group(
 
 register_model_group(
     models={
-        "EXAONE-4.0-1.2B": {
+        "EXAONE-4.0-1.2B-Instruct": {
             DownloadSource.DEFAULT: "LGAI-EXAONE/EXAONE-4.0-1.2B",
         },
     },
