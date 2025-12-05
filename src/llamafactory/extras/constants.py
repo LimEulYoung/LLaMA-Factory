@@ -686,6 +686,15 @@ register_model_group(
     template="exaone",
 )
 
+register_model_group(
+    models={
+        "EXAONE-4.0-1.2B": {
+            DownloadSource.DEFAULT: "LGAI-EXAONE/EXAONE-4.0-1.2B",
+        },
+    },
+    template="exaone",
+)
+
 
 register_model_group(
     models={
