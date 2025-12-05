@@ -688,16 +688,6 @@ register_model_group(
 
 register_model_group(
     models={
-        "EXAONE-4.0-1.2B-Instruct": {
-            DownloadSource.DEFAULT: "LGAI-EXAONE/EXAONE-4.0-1.2B",
-        },
-    },
-    template="exaone4",
-)
-
-
-register_model_group(
-    models={
         "Falcon-7B": {
             DownloadSource.DEFAULT: "tiiuae/falcon-7b",
             DownloadSource.MODELSCOPE: "AI-ModelScope/falcon-7b",
