@@ -481,6 +481,16 @@
       "rejected": "rejected"
     }
   },
+  "dpo_banmal_demo": {
+    "file_name": "dpo_banmal_demo.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
   "dpo_zh_demo": {
     "file_name": "dpo_zh_demo.json",
     "ranking": true,
