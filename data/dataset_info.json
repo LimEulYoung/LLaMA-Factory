@@ -608,6 +608,20 @@
       "assistant_tag": "assistant"
     }
   },
+  "kto_banmal_demo": {
+    "file_name": "kto_banmal_demo.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "kto_tag": "label"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
   "kto_mix_en": {
     "hf_hub_url": "argilla/kto-mix-15k",
     "formatting": "sharegpt",
