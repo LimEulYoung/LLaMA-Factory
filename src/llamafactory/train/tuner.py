@@ -96,6 +96,9 @@ def _training_function(config: dict[str, Any]) -> None:
         run_rm(model_args, data_args, training_args, finetuning_args, callbacks)
     elif finetuning_args.stage == "ppo":
         run_ppo(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+    elif finetuning_args.stage == "ppo_custom":
+        from .ppo_custom import run_ppo_custom
+        run_ppo_custom(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
     elif finetuning_args.stage == "dpo":
         run_dpo(model_args, data_args, training_args, finetuning_args, callbacks)
     elif finetuning_args.stage == "kto":

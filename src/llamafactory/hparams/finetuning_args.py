@@ -457,7 +457,7 @@ class FinetuningArguments(
         default=False,
         metadata={"help": "Whether or not to train model in purely bf16 precision (without AMP)."},
     )
-    stage: Literal["pt", "sft", "rm", "ppo", "dpo", "kto"] = field(
+    stage: Literal["pt", "sft", "rm", "ppo", "ppo_custom", "dpo", "kto"] = field(
         default="sft",
         metadata={"help": "Which stage will be performed in training."},
     )
@@ -545,6 +545,7 @@ class FinetuningArguments(
 
         if self.stage == "ppo" and self.reward_model is None:
             raise ValueError("`reward_model` is necessary for PPO training.")
+        # ppo_custom uses custom reward function, no reward_model needed
 
         if self.stage == "ppo" and self.reward_model_type == "lora" and self.finetuning_type != "lora":
             raise ValueError("`reward_model_type` cannot be lora for Freeze/Full PPO training.")

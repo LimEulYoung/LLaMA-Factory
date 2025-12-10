@@ -102,7 +102,7 @@ class Runner:
                 return ALERTS["err_json_schema"][lang]
 
             stage = TRAINING_STAGES[get("train.training_stage")]
-            if stage == "ppo" and not get("train.reward_model"):
+            if stage == "ppo" and not get("train.reward_model"):  # ppo_custom doesn't need reward_model
                 return ALERTS["err_no_reward_model"][lang]
         else:
             if not get("eval.output_dir"):

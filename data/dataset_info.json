@@ -2,6 +2,9 @@
   "identity": {
     "file_name": "identity.json"
   },
+  "ppo_custom_demo": {
+    "file_name": "ppo_custom_demo.json"
+  },
   "alpaca_en_demo": {
     "file_name": "alpaca_en_demo.json"
   },
